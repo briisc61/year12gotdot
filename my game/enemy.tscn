@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5c0u0dh4in4d"]
+
+[ext_resource type="PackedScene" uid="uid://14iwsvahb5jp" path="res://models/zombies/zombie1.glb" id="1_ssw6g"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="zombie1" parent="." instance=ExtResource("1_ssw6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95363, 0.977035, 0.881628)
