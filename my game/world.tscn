@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cuwvkqwp5plt1"]
+[gd_scene load_steps=34 format=3 uid="uid://cuwvkqwp5plt1"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_so4l5"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_byte.gd" id="2_4u1hv"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/data_vector_float.gd" id="4_krtej"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/mesh_vector_data.gd" id="5_6g5hj"]
 [ext_resource type="Material" uid="uid://ff2cjjfaaqfb" path="res://addons/cyclops_level_builder/materials/tool_edit_unselected_material.tres" id="6_po3lb"]
+[ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="7_yssex"]
 
 [sub_resource type="Resource" id="Resource_lklh7"]
 script = ExtResource("2_4u1hv")
@@ -280,3 +281,6 @@ materials = Array[Material]([ExtResource("6_po3lb")])
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34, 0)
 script = ExtResource("1_so4l5")
 mesh_vector_data = SubResource("Resource_gqmq1")
+
+[node name="Character" parent="." instance=ExtResource("7_yssex")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 44.4942, 0)
