@@ -24,5 +24,6 @@ func _physics_process(delta):
 	
 	velocity = new_velocity
 	move_and_slide()
-	$zombiewithanimations/AnimationPlayer.play("Armature_003|mixamo_com|Layer0")
+	%zombiewithanimations/AnimationPlayer.play("Armature_003|mixamo_com|Layer0")
+	$ZombieModel.look_at(player.global_position)
 	

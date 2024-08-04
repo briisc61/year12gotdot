@@ -11,10 +11,13 @@ height = 1.94184
 script = ExtResource("1_83bmk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_jnwrl")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
-[node name="zombiewithanimations" parent="." instance=ExtResource("2_la2ul")]
-transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0, 1.0267, 0)
+[node name="ZombieModel" type="Node3D" parent="."]
+transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0, -1, 0)
+
+[node name="zombiewithanimations" parent="ZombieModel" instance=ExtResource("2_la2ul")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)

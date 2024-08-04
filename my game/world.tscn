@@ -175,7 +175,7 @@ mesh_vector_data = SubResource("Resource_0q1u6")
 materials = Array[Material]([ExtResource("6_p6ga0")])
 
 [node name="Enemy" parent="." instance=ExtResource("2_q7sy1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.1062, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 32.0171, 0)
 
 [node name="Character" parent="." instance=ExtResource("7_yssex")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 46.7196, 0)
