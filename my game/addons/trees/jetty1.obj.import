@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bctuavgf730je"
+path="res://.godot/imported/jetty1.obj-5d2a470f6d44ecf6502bf5b85ca308cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/jetty1.obj-5d2a470f6d44ecf6502bf5b85ca308cb.mesh"]
+
+source_file="res://addons/trees/jetty1.obj"
+dest_files=["res://.godot/imported/jetty1.obj-5d2a470f6d44ecf6502bf5b85ca308cb.mesh", "res://.godot/imported/jetty1.obj-5d2a470f6d44ecf6502bf5b85ca308cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
