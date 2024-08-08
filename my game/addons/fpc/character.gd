@@ -10,7 +10,7 @@ extends CharacterBody3D
 
 
 @export_category("Character")
-@export var base_speed : float = 3.0
+@export var base_speed : float = 4.0
 @export var sprint_speed : float = 6.0
 @export var crouch_speed : float = 1.0
 

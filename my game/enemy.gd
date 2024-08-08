@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var nav_agent = $NavigationAgent3D
 @onready var player = get_node("/root/World/Character")
 
-var movement_speed = 1
+var movement_speed = 3
 
 func _ready():
 	call_deferred("get_target")
