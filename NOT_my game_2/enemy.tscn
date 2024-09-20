@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5c0u0dh4in4d"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_83bmk"]
+[ext_resource type="PackedScene" uid="uid://c34u6yklp7giq" path="res://models/zombies/zombiewithanimations.glb" id="2_la2ul"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jnwrl"]
+radius = 0.242418
+height = 1.94184
+
+[node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("1_83bmk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_jnwrl")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="ZombieModel" type="Node3D" parent="."]
+transform = Transform3D(-0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, 0, -1, 0)
+
+[node name="zombiewithanimations" parent="ZombieModel" instance=ExtResource("2_la2ul")]
+unique_name_in_owner = true
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)

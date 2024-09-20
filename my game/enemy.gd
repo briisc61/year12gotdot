@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var nav_agent = $NavigationAgent3D
 @onready var player = get_node("/root/World/Character")
 
-var movement_speed = 70
+var movement_speed = 7
 
 func _ready():
 	call_deferred("get_target")
@@ -27,3 +27,9 @@ func _physics_process(delta):
 	%zombiewithanimations/AnimationPlayer.play("Armature_003|mixamo_com|Layer0")
 	$ZombieModel.look_at(player.global_position)
 	
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body.name == "character":
+		print('working')
+		queue_free()

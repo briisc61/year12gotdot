@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jj1g5p8sfv2l"
+path="res://.godot/imported/log2.obj-99d09a4d45317a12ccd02ad48eab91d3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/log2.obj-99d09a4d45317a12ccd02ad48eab91d3.mesh"]
+
+source_file="res://addons/trees/log2.obj"
+dest_files=["res://.godot/imported/log2.obj-99d09a4d45317a12ccd02ad48eab91d3.mesh", "res://.godot/imported/log2.obj-99d09a4d45317a12ccd02ad48eab91d3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

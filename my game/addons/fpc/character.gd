@@ -60,7 +60,10 @@ extends CharacterBody3D
 @export var pausing_enabled : bool = true
 @export var gravity_enabled : bool = true
 
+@onready var gun_barrel = $Head/gun
 
+var bullet = load("res://bullet.tscn")
+var instance
 # Member variables
 var speed : float = base_speed
 var current_speed : float = 0.0
@@ -333,6 +336,12 @@ func _process(delta):
 				Input.MOUSE_MODE_VISIBLE:
 					Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
+	if Input.is_action_pressed("shoot"):
+		instance = bullet.instantiate()
+		instance.position = gun_barrel.global_position
+		instance.transform.basis = gun_barrel.global_transform.basis
+		get_parent().add_child(instance)
+	
 	
 	HEAD.rotation.x = clamp(HEAD.rotation.x, deg_to_rad(-90), deg_to_rad(90))
 	
@@ -346,3 +355,8 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		HEAD.rotation_degrees.y -= event.relative.x * mouse_sensitivity
 		HEAD.rotation_degrees.x -= event.relative.y * mouse_sensitivity
+
+
+func _on_area_3d_area_entered(area: Area3D) -> void:
+	if area.is_in_group("Death"):
+		get_tree().reload_current_scene()
