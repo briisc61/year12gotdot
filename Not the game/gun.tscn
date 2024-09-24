@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cirune3vwvnlo"]
+
+[ext_resource type="PackedScene" uid="uid://ddxwg4xdg8bl2" path="res://models/gun.blend" id="1_1naag"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.057704, -0.394796, 0.0849686)
+
+[node name="gun" parent="." instance=ExtResource("1_1naag")]
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(3.72251, 0, 0, 0, 2.86562, 0, 0, 0, 2.99751, 0, 1.12405, 5.74233)
+target_position = Vector3(0, 0, 1)
